@@ -9,7 +9,7 @@
 			color: green;
 			text-align: center;
 		}
-		h3 {
+		h3, h2 {
 			color: purple;
 		}
 	</style>
@@ -19,14 +19,14 @@
 		<h1>Registration Form</h1>
 	</header>
 	<main>
-		<h3>Please fill in all information required to complete your registration</h3>
+		<h2>Please fill in all information required to complete your registration</h2>
 	</main>
 	<div id="main-container" class="main-container">
 		<section id="reg-form" class="reg-form">
 			<form id="htmlform" action="../assg-3/submit_answer.html" method="post">
 				<div id="fn-container" class="form-element">
 			<fieldset>
-					<legend><b>Create Username and Password</b></legend>
+					<legend><h2>Create Username and Password</h2></legend>
 				<div id="email-container" class="form-element">
 					<label for="email">Email/Username</label>
 					<br>
@@ -42,14 +42,14 @@
 			</fieldset>
 			<br>
 			<fieldset>
-				<div id="fn-container" class="form-element">
-				<p><b>Personal Information</b></p>
+				<div id="firstname-container" class="form-element">
+				<label for="firstname"><h2>Personal Information</h2></label>
 					<label for="firstname">First Name</label>
 					<br>
 					<input type="text" name="firstname" id="firstname" placeholder="Roxanne" required>
 					<br>
 				</div>
-				<div id="ln-container" class="form-element">
+				<div id="lastname-container" class="form-element">
 					<label for="lastname">Last Name</label>
 					<br>
 					<input type="text" name="lastname" id="lastname" placeholder="Boisvert" required>
@@ -58,13 +58,13 @@
 				<div id="address-container" class="form-element">
 					<label for="address">Address</label>
 					<br>
-					<input type="address" name="address" id="address">
+					<input type="text" name="address" id="address">
 					<br>
 				</div>
 				<div id="city-container" class="form-element">
 					<label for="city">City</label>
 					<br>
-					<input type="city" name="city" id="city">
+					<input type="text" name="city" id="city">
 					<br>	
 				</div>
 				<div id="province-container" class="form-element">
@@ -84,7 +84,6 @@
 						<option value="northwestterritories">Northwest Territories</option>
 						<option value="nunavut">Nunavut</option>
 						<option value="yukon">Yukon</option>
-					<br>
 					</select>
 				</div>
 				<div id="country-container" class="form-element">
@@ -94,7 +93,6 @@
 						<option value="canada">Canada</option>
 						<option value="unitedstates">United States</option>
 						<option value="other">Other</option>
-					<br>	
 					</select>
 				</div>
 				<div id="postalcode-container" class="form-element">
@@ -118,7 +116,7 @@
 				<br>
 				<div id="gender-container" class="form-element">
 				<fieldset>
-					<legend><b>I Identify Myself As</b></legend>
+					<legend><h3>I Identify Myself As</h3></legend>
 					<input type="radio" name="gender1" value="male">Male
 					<br>
 					<input type="radio" name="gender2" value="female">Female
@@ -127,12 +125,12 @@
 					<br>
 					<input type="radio" name="gender4" value="prefernotdisclose">Prefer not to Disclose
 					<br>
+				</fieldset>
 				</div>
-			</fieldset>
 			<br>
 			<fieldset>
 				<div id="hobbies-container" class="form-element">
-					<legend><b>Hobbies/Interests</b></legend>
+					<label for="hobbies"><h3>Hobbies/Interests</h3></label>
 					<br>
 					<input type="checkbox" name="hobbies1" value="reading">Reading
 					<input type="checkbox" name="hobbies2" value="knitting">Knitting
@@ -147,18 +145,18 @@
 					<br>
 				</div>
 			</fieldset>
-			<br>
-			
+			<br>		
 			<div id="intro-container" class="form-element">
 			<fieldset>	
-				<legend><b>Please Introduce Yourself</b></legend>
+				<legend><h3>Please Introduce Yourself</h3></legend>
 				<textarea name="introduction" rows="7" cols="30">
 				</textarea>
+			</fieldset>
 			</div>
 			<br>
 			<div id="website-container" class="form-element">
 				<br>
-				<label for="website"><b>Your Website (if applicable)</b></label>
+				<label for="website"><h3>Your Website (if applicable)</h3></label>
 				<br>
 				<input type="url" name="website" id="website">
 			</fieldset>
