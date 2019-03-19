@@ -9,7 +9,7 @@
 			color: green;
 			text-align: center;
 		}
-		h3, h2 {
+		b, h2 {
 			color: purple;
 		}
 	</style>
@@ -26,7 +26,7 @@
 			<form id="htmlform" action="../assg-3/submit_answer.html" method="post">
 				<div id="fn-container" class="form-element">
 			<fieldset>
-					<legend><h2>Create Username and Password</h2></legend>
+					<legend><b>Create Username and Password</b></legend>
 				<div id="email-container" class="form-element">
 					<label for="email">Email/Username</label>
 					<br>
@@ -42,9 +42,10 @@
 			</fieldset>
 			<br>
 			<fieldset>
-				<div id="firstname-container" class="form-element">
-				<label for="firstname"><h2>Personal Information</h2></label>
-					<label for="firstname">First Name</label>
+				<div id="name-container" class="form-element">
+				<label for="name"><b>Personal Information</b></label>
+				<br>
+					<label for="name">First Name</label>
 					<br>
 					<input type="text" name="firstname" id="firstname" placeholder="Roxanne" required>
 					<br>
@@ -116,7 +117,7 @@
 				<br>
 				<div id="gender-container" class="form-element">
 				<fieldset>
-					<legend><h3>I Identify Myself As</h3></legend>
+					<legend><b>I Identify Myself As</b></legend>
 					<input type="radio" name="gender1" value="male">Male
 					<br>
 					<input type="radio" name="gender2" value="female">Female
@@ -130,7 +131,7 @@
 			<br>
 			<fieldset>
 				<div id="hobbies-container" class="form-element">
-					<label for="hobbies"><h3>Hobbies/Interests</h3></label>
+					<label for="hobbies"><b>Hobbies/Interests</b></label>
 					<br>
 					<input type="checkbox" name="hobbies1" value="reading">Reading
 					<input type="checkbox" name="hobbies2" value="knitting">Knitting
@@ -148,27 +149,21 @@
 			<br>		
 			<div id="intro-container" class="form-element">
 			<fieldset>	
-				<legend><h3>Please Introduce Yourself</h3></legend>
+				<legend><b>Please Introduce Yourself</b></legend>
 				<textarea name="introduction" rows="7" cols="30">
 				</textarea>
 			</fieldset>
 			</div>
 			<br>
 			<div id="website-container" class="form-element">
-				<br>
-				<label for="website"><h3>Your Website (if applicable)</h3></label>
+				<label for="website"><b>Your Website</b> <i>(if applicable)</i></label>
 				<br>
 				<input type="url" name="website" id="website">
-			</fieldset>
 			</div>
 			<br>
 			<input type="submit" name="submit" value="Submit">
 			<input type="reset" name="reset" value="Reset">
 		</section>
-		
 	</div>
-
-	
-
 </body>
 </html>
