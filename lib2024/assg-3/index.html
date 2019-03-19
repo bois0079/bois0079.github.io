@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+<head>
+	<meta charset="utf-8">
+	<title>Assignment 3- Registration Form</title>
+	<meta name="author" content="Roxanne Boisvert">
+	<style type="text/css">
+		h1 {
+			color: green;
+			text-align: center;
+		}
+		h3 {
+			color: purple;
+		}
+		#container {
+			text-decoration-style: underline;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Registration Form</h1>
+	</header>
+	<main>
+		<h3>Please fill in all information required to complete your registration</h3>
+	</main>
+	<div id="main-container" class="main-container">
+		<section id="reg-form" class="reg-form">
+			<form id="htmlform" action="../assg-3/submit_answer.html" method="post">
+				<div id="fn-container" class="form-element">
+			<fieldset>
+					<legend><b>Create Username and Password</b></legend>
+				<div id="email-container" class="form-element">
+					<label for="email">Email/Username</label>
+					<br>
+					<input type="email" name="email" id="email" placeholder="example@email.com" required>
+					<br>	
+				</div>
+				<div id="password-container" class="form-element">
+					<label for="password">Password</label>
+					<br>
+					<input type="password" name="password" id="password" required>
+					<br>
+				</div>
+			</fieldset>
+			<br>
+			<fieldset>
+				<div id="fn-container" class="form-element">
+				<p><b>Personal Information</b></p>
+					<label for="firstname">First Name</label>
+					<br>
+					<input type="text" name="firstname" id="firstname" placeholder="Roxanne" required>
+					<br>
+				</div>
+				<div id="ln-container" class="form-element">
+					<label for="lastname">Last Name</label>
+					<br>
+					<input type="text" name="lastname" id="lastname" placeholder="Boisvert" required>
+					<br>
+				</div>
+				<div id="address-container" class="form-element">
+					<label for="address">Address</label>
+					<br>
+					<input type="address" name="address" id="address" placeholder="123 Main St" required>
+					<br>
+				</div>
+				<div id="city-container" class="form-element">
+					<label for="city">City</label>
+					<br>
+					<input type="city" name="city" id="city" placeholder="Ottawa" required>
+					<br>	
+				</div>
+				<div id="province-container" class="form-element">
+					<label for="province">Province</label>
+					<br>
+					<select name="province" id="province">
+						<option value="alberta">Alberta</option>
+						<option value="britishcolumbia">British Columbia</option>
+						<option value="manitoba">Manitoba</option>
+						<option value="newbrunswick">New Brunswick</option>
+						<option value="newfoundland">Newfoundland and Labrador</option>
+						<option value="novascotia">Nova Scotia</option>
+						<option value="ontario">Ontario</option>
+						<option value="princeedwardisland">Prince Edward Island</option>
+						<option value="quebec">Quebec</option>
+						<option value="saskatchewan">Saskatchewan</option>
+						<option value="northwestterritories">Northwest Territories</option>
+						<option value="nunavut">Nunavut</option>
+						<option value="yukon">Yukon</option>
+					<br>
+					</select>
+				</div>
+				<div id="country-container" class="form-element">
+					<label for="Country">Country</label>
+					<br>
+					<select name="country" id="country">
+						<option value="canada">Canada</option>
+						<option value="unitedstates">United States</option>
+						<option value="other">Other</option>
+					<br>	
+					</select>
+				</div>
+				<div id="postalcode-container" class="form-element">
+					<label for="postalcode">Postal Code</label>
+					<br>
+					<input type="text" name="postalcode" id="postalcode" placeholder="K2P 1W6" required="">
+					<br>
+				</div>
+				<div id="phone-container" class="form-element">
+					<label for="phone">Telephone Number</label>
+					<br>
+					<input type="number" name="phone" id="phone" placeholder="613-555-5555" required>
+					<br>
+				</div>
+				<div id="dob-container" class="form-element">
+					<label for="dob">Date of Birth</label>
+					<br>
+					<input type="date" name="dob" id="dob" required>
+					<br>
+				</div>
+				<br>
+				<div id="gender-container" class="form-element">
+				<fieldset>
+					<legend><b>I Identify Myself As</b></legend>
+					<input type="radio" name="gender1" value="male">Male
+					<br>
+					<input type="radio" name="gender2" value="female">Female
+					<br>
+					<input type="radio" name="gender3" value="genderqueer-nonbinary">Genderqueer/Non-Binary
+					<br>
+					<input type="radio" name="gender4" value="prefernotdisclose">Prefer not to Disclose
+					<br>
+				</div>
+			</fieldset>
+			<br>
+			<fieldset>
+				<div id="hobbies-container" class="form-element">
+					<legend><b>Hobbies/Interests</b></legend>
+					<br>
+					<input type="checkbox" name="hobbies1" value="reading">Reading
+					<input type="checkbox" name="hobbies2" value="knitting">Knitting
+					<br>
+					<input type="checkbox" name="hobbies3" value="crafts">Crafts
+					<input type="checkbox" name="hobbies4" value="cooking">Cooking
+					<br>
+					<input type="checkbox" name="hobbies5" value="sports">Sports
+					<input type="checkbox" name="hobbies6" value="games">Boardgames
+					<br>
+					<input type="checkbox" name="hobbies7" value="notlisted">Other
+					<br>
+				</div>
+			</fieldset>
+			<br>
+			
+			<div id="intro-container" class="form-element">
+			<fieldset>	
+				<legend><b>Please Introduce Yourself</b></legend>
+				<textarea name="introduction" rows="7" cols="30">
+				</textarea>
+			</div>
+			<br>
+			<div id="website-container" class="form-element">
+				<br>
+				<label for="website"><b>Your Website (if applicable)</b></label>
+				<br>
+				<input type="url" name="website" id="website">
+			</fieldset>
+			</div>
+			<br>
+			<input type="submit" name="submit" value="Submit">
+			<input type="reset" name="reset" value="Reset">
+		</section>
+		
+	</div>
+
+	
+
+</body>
+</html>
